@@ -15,7 +15,7 @@ def print_string(param):
 
 @app.route('/count/<int:param>')
 def count(param):
-    numbers = '-vv'.join(str(i) for i in range(param+1))
+    numbers = '\n'.join(str(i) for i in range(param+1))
     return f'{numbers}'
     
 @app.route('/math/int:num1><operation><int:num2>')
